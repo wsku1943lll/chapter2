@@ -27,9 +27,6 @@ public class UserServiceTest {
         boolean b1 = userService.hasMatchUser("admin","123456");
         boolean b2 = userService.hasMatchUser("admin","123");
         System.out.println("["+b1+"]["+b2+"]" );
-        if(b1==true){
-            return ;
-        }
     }
 
     @Test

@@ -25,6 +25,11 @@ public class UserService {
 
     public boolean hasMatchUser(String userName,String password){
         int matchcount = userDao.getMatchCount(userName,password);
+        if(matchcount>0){
+            System.out.println(userName+" has visited");
+        }else{
+            System.out.println("No "+userName+" has matched");
+        }
         return matchcount>0;
     }
 
